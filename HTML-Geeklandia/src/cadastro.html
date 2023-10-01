@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <link rel="icon" href="logopag.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/cadastro-login.css">
+    <script src="/scripts/script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-marca">
+            <img src="/images/logo.png" alt="logo">
+            <span>GEEKLÂNDIA</span>
+        </div>
+        <div id="search">
+            <input type="text" placeholder="buscando...">
+            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                <path d="M9.5 3.16666H22.1667V6.33332H9.5V3.16666ZM6.33333 9.49999V6.33332H9.5V9.49999H6.33333ZM6.33333 22.1667H3.16666V9.49999H6.33333V22.1667ZM9.5 25.3333H6.33333V22.1667H9.5V25.3333ZM22.1667 25.3333V28.5H9.5V25.3333H22.1667ZM25.3333 22.1667H22.1667V25.3333H25.3333V28.5H28.5V31.6667H31.6667V34.8333H34.8333V31.6667H31.6667V28.5H28.5V25.3333H25.3333V22.1667ZM25.3333 9.49999H28.5V22.1667H25.3333V9.49999ZM25.3333 9.49999V6.33332H22.1667V9.49999H25.3333Z" fill="white"/>
+            </svg>
+
+            <div id="navegacao">
+                <span><a href="index.html">HOME</a></span>
+                <span><a href="lista-produtos.html">PRODUTOS</a></span>
+            </div>
+        </div>
+        <div id="buttons">
+            <div class="button">
+                <button><a href="/src/cadastro.html">CADASTRAR-SE</a></button>
+            </div>
+            <div class="button">
+                <button><a href="/src/login.html">LOGIN</a></button>
+            </div>
+            <a href="/src/finalizacao-compra.html"><img src="/images/icone-cart.png" alt="mini-cart"></a>
+        </div>
+    </header>
+    <div>
+        <h1>TORNE-SE UM GEEKER E VAMOS GEEKAR JUNTOS</h1>
+    </div>
+
+    <section id="formulario">
+        <!-- Fazer funcionar -->
+
+        <form action="/cadastro.php" method="post" onsubmit="imprimirFormulario(this)">
+            <div id="campos">
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" required>
+                </div>
+                <div class="campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                <div class="campo">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco">
+                </div>
+                <div class="campo">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="A senha deve conter pelo menos 8 caracteres, incluindo uma letra maiúscula, uma letra minúscula, um número e um caractere especial (não sequencial em nenhum quesito)"
+                        required>
+                </div>
+                <div class="botao">
+                    <button type="submit" name="submit" form="formulario" id="botao-cadastrar">CADASTRAR</button>
+                </div>
+            </div>
+        </form>
+
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="logo-marca">
+            <img src="/images/logo.png" alt="logo">
+            <span>GEEKLÂNDIA</span>
+        </div>
+        <div class="divisions">
+            <span>INSTITUCIONAL</span>
+            <p>Sobre nós</p>
+        </div>
+        <div class="divisions">
+            <span>CONTATO</span>
+            <p>(11) 94321-8977</p>
+            <p>geeklandia@geek.com.br</p>
+        </div>
+        <div class="divisions">
+            <span>AJUDA</span>
+            <p>Perguntas Frequentes</p>
+            <p>Política de Privacidade</p>
+        </div>
+        <div class="divisions">
+            <span>REDES SOCIAIS</span>
+            <p>Instagram</p>
+            <p>YouTube</p>
+            <p>Facebook</p>
+        </div>
+        <p class="copy">&copy; 2023 Geeklândia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

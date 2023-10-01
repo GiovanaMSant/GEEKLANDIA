@@ -1,0 +1,102 @@
+#content #detalhes-do-item {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#content #detalhes-do-item #esquerda {
+    margin: 90px 60px 60px 0;
+}
+
+#content #detalhes-do-item #esquerda img {
+    width: 650px;
+    height: 500px;
+
+    border-radius: 20px;
+}
+
+#content #detalhes-do-item #direita {
+    margin: 90px 0 60px 60px;
+}
+
+#content #detalhes-do-item #direita .titulo {
+    font-size: 32px;
+    font-weight: 500;
+
+    margin-bottom: 60px;
+}
+
+#content #detalhes-do-item #direita .box-unidades {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    margin-bottom: 60px;
+}
+
+p {
+    margin-right: 15px;
+
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#content #detalhes-do-item #direita .box-unidades .unidades{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#content #detalhes-do-item #direita .box-unidades svg {
+    margin: 0 15px 0 15px;
+}
+
+#content #detalhes-do-item #direita .preco {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#content #detalhes-do-item #direita .alinhar-botao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+#content #detalhes-do-item #direita .alinhar-botao button {
+    width: 200px;
+    height: 50px;
+
+    border-radius: 6px;
+    border: none;
+    background-color: #7BBF5E;
+
+    color: #F2F2F2;
+    font-family: 'K2D', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}   
+
+#content #detalhes-do-item #direita .alinhar-botao button a  {
+    text-decoration: none;
+
+    color: #F2F2F2;
+    font-family: K2D;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#description {
+    margin-left: 60px;
+}
+
+#description h2 {
+    font-size: 32px;
+    font-weight: 500;
+
+    text-align: center;
+}
+
+#description p {
+    margin: 15px 0;
+}

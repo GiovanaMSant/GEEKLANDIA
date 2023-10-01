@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalização de Compra - Geeklândia</title>
+    <link rel="icon" href="logopag.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/finalizacao-compra.css">
+</head>
+<body>
+    <header>
+        <div class="logo-marca">
+            <img src="/images/logo.png" alt="logo">
+            <span>GEEKLÂNDIA</span>
+        </div>
+        <div id="search">
+            <input type="text" placeholder="buscando...">
+            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                <path d="M9.5 3.16666H22.1667V6.33332H9.5V3.16666ZM6.33333 9.49999V6.33332H9.5V9.49999H6.33333ZM6.33333 22.1667H3.16666V9.49999H6.33333V22.1667ZM9.5 25.3333H6.33333V22.1667H9.5V25.3333ZM22.1667 25.3333V28.5H9.5V25.3333H22.1667ZM25.3333 22.1667H22.1667V25.3333H25.3333V28.5H28.5V31.6667H31.6667V34.8333H34.8333V31.6667H31.6667V28.5H28.5V25.3333H25.3333V22.1667ZM25.3333 9.49999H28.5V22.1667H25.3333V9.49999ZM25.3333 9.49999V6.33332H22.1667V9.49999H25.3333Z" fill="white"/>
+            </svg>
+
+            <div id="navegacao">
+                <span><a href="index.html">HOME</a></span>
+                <span><a href="lista-produtos.html">PRODUTOS</a></span>
+            </div>
+        </div>
+        <div id="buttons">
+            <div class="button">
+                <button><a href="/src/cadastro.html">CADASTRAR-SE</a></button>
+            </div>
+            <div class="button">
+                <button><a href="/src/login.html">LOGIN</a></button>
+            </div>
+            <a href="/src/finalizacao-compra.html"><img src="/images/icone-cart.png" alt="mini-cart"></a>
+        </div>       
+    </header>
+
+    <div id="content">
+        <section id="resumo-compra">
+            <h2>FINALIZAÇÃO DA COMPRA</h2>
+            <h3>Resumo da Compra</h3>
+            <div class="resumo">             
+                <span>Produto:</span>
+                <p>Figure Mario Broos Jumping</p>
+            </div>
+            <div class="resumo">
+                <span>Quantidade:</span>
+                <p>1</p>
+            </div>
+            <div class="resumo">
+                <span>Preço Unitário:</span>
+                <p>R$ 85,00</p>
+            </div>
+            <div class="resumo">
+                <span>Total da compra:</span>
+                <p>85,00</p>
+            </div>
+        </section>
+        
+        <section id="informacoes-pagamento">
+            <h2>INFORMAÇÕES DE PAGAMENTO</h2> <!-- Fazer funcionar -->
+                <div class="info-cartao">
+                    <label for="nome-cartao">Nome no Cartão:</label>
+                    <input type="text" id="nome-cartao" name="nome-cartao" required>
+                </div>
+                <div class="info-cartao">
+                    <label for="numero-cartao">Número do Cartão:</label>
+                    <input type="text" id="numero-cartao" name="numero-cartao" required>
+                </div>
+                <div class="info-cartao">
+                    <label for="validade-cartao">Validade do Cartão:</label>
+                    <input type="text" id="validade-cartao" name="validade-cartao" placeholder="MM/AA" required>
+                </div>
+                <div class="info-cartao">
+                    <label for="cvv-cartao">CVV:</label>
+                    <input type="text" id="cvv-cartao" name="cvv-cartao" required>
+                </div>
+                <div class="info-cartao">
+                    <button type="submit">Finalizar Compra</button>
+                </div>
+        </section>
+    </div>
+    
+
+    <footer>
+        <div class="logo-marca">
+            <img src="/images/logo.png" alt="logo">
+            <span>GEEKLÂNDIA</span>
+        </div>
+        <div class="divisions">
+            <span>INSTITUCIONAL</span>
+            <p>Sobre nós</p>
+        </div>
+        <div class="divisions">
+            <span>CONTATO</span>
+            <p>(11) 94321-8977</p>
+            <p>geeklandia@geek.com.br</p>
+        </div>
+        <div class="divisions">
+            <span>AJUDA</span>
+            <p>Perguntas Frequentes</p>
+            <p>Política de Privacidade</p>
+        </div>
+        <div class="divisions">
+            <span>REDES SOCIAIS</span>
+            <p>Instagram</p>
+            <p>YouTube</p>
+            <p>Facebook</p>
+        </div>
+        <p class="copy">&copy; 2023 Geeklândia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
